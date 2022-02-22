@@ -12,6 +12,8 @@ app.use(cors());
 
 app.use(express.json());
 
+app.use(express.static("./index.html")
+
 // Routing
 app.post('/solve', (req, res) => {
   const options = {
